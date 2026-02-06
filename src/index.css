@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+  @theme {
+    --color-backgroundLight: #fffdf9;
+    --color-surfaceBase: #ffffff; 
+    --color-textPrimary: #0b0458; 
+    --color-textSecondary: #2b2a2a; 
+    --color-GraySecondaryLight: #666464; 
+    --color-surfaceMuted: #616263;
+    --color-placeholder: #c4c4c4; 
+    --color-primary: #2b7fff; 
+    --color-notificationBg: #d9fadd; 
+    --color-buttonGreen: #05b505; 
+    --color-HoverGrayBg: #cfd4cf; 
+    --color-hoverText: #676b67; 
+  }
+
+  .bg-bgGradient {
+    background-image: linear-gradient(to top right, #fdcef3, #f9d3a1);
+  }
+
+  .primary-bgGradient {
+    @apply bg-blue-300;
+  }
+
+  .bgGradient-Button {
+    @apply bg-blue-600;
+  }
+
+  .button-primary {
+    @apply bg-blue-400 font-semibold px-4 rounded hover:bg-blue-700 transition duration-300;
+  }
+
+  .Icon-Header {
+    @apply bg-gradient-to-r from-blue-500 to-blue-300 p-2 rounded-lg;
+  }
+
+  .toggle-on {
+    background-image: linear-gradient(to bottom right, #0e0af1, #0d035d);
+  }
+  @layer utilities {
+    .All-header-color {
+      @apply bg-gradient-to-b from-white to-blue-100 backdrop-blur-md border-b border-blue-200 shadow-sm;
+    }
+  }
+  @layer utilities {
+    .banner {
+      @apply bg-gradient-to-b from-white to-blue-100 backdrop-blur-md border-b border-blue-200 shadow-sm;
+    }
+  }
+  @layer utilities {
+    .BG-Banner {
+      @apply bg-gradient-to-r from-blue-950 via-blue-700 to-blue-400 shadow-lg;
+    }
+  }
+}
+
+
+/* Global scrollbar styling: WebKit and Firefox */
+/* Adjust the `width` value to make the scrollbar thinner or thicker. */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* light track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #94a3b8; /* thumb color */
+  border-radius: 8px;
+  border: 2px solid transparent; /* gives some padding look */
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7b8da0;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b7fff #f1f5f9;
+}
+
+@layer utilities {
+  .Reload-Btn {
+    @apply bg-gradient-to-r from-red-600 via-red-800 to-red-800 shadow-lg;
+  }
+}
