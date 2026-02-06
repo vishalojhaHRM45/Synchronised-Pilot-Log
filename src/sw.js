@@ -118,3 +118,5 @@ self.addEventListener('message', (event) => {
     // console.log('[SW] Navigation requested to:', event.data.url);
   }
 });
+
+console.log('[SW] eLogBook Service Worker loaded! 🚀');
